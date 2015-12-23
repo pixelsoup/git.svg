@@ -1,0 +1,10 @@
+	/* ===================================
+Template Base
+=================================== */
+img { vertical-align: middle; display: block; max-width: 100%; height: auto; }
+hr { margin-top: 10px; margin-bottom: 10px; border: 0; border-top: 1px solid $black20; }
+.img-responsive { display: block; max-width: 100%; height: auto; }
+.img-rounded { border-radius: 6px }
+.img-thumbnail { padding: 4px; line-height: 1.428571429; background-color: #ffffff; border: 1px solid #dddddd; border-radius: 3px; display: inline-block; max-width: 100%; height: auto;
+	-webkit-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out; }

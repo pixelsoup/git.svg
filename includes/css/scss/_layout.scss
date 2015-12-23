@@ -1,0 +1,204 @@
+/* ===================================
+Layout
+=================================== */
+/*
+BOX-SIZING
+Set the global `box-sizing` state to `border-box`
+https://github.com/inuitcss/generic.box-sizing
+Paul Irish
+http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+* {
+	&,
+	&:before,
+	&:after {
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;
+	}
+}
+/*
+Modernizr file has been updated to include 'main'å for IE
+*/
+.box-main {
+	padding: 1em;
+	@include respond-screen($bp-md){
+		padding: 1.5em;
+	}
+}
+
+.box-main-sm {
+	padding: 0 .5em;
+	@include respond-screen($bp-md){
+		padding: 0 1em;
+	}
+}
+
+.box-sm { padding: .5em; }
+
+.box-featured-text {
+	padding: 1em;
+
+	@include respond-screen($bp-md) {
+		padding: 1em 90px 1em 1em;
+	}
+}
+
+.box-news-text {
+	padding: 1em 20px 1em 1em;
+}
+
+.box-grid-image-first {
+	padding-top: 2em;
+	padding-right: 1em;
+}
+
+.box-grid-image-last {
+	padding-top: 2em;
+	padding-left: 1em;
+}
+
+.box-grid-image-top {
+	padding-bottom: 2em;
+}
+
+.box-aside-last {
+	padding: 1em;
+	@include respond-screen($bp-md){
+		padding: 1.5em 1.5em 1.5em 0;
+	}
+}
+
+.box-header {
+	padding: 0 1em;
+	@include respond-screen($bp-md){
+		padding: 0 1.5em;
+	}
+}
+.box-header-sm {
+	padding: 0 0.3em;
+	@include respond-screen($bp-md){
+		padding: 0 0.5em;
+	}
+}
+
+.box-first {
+	padding: 0;
+	@include respond-screen($bp-md){
+		padding: 0 0.75em 0 0;
+	}
+}
+.box-last {
+	padding: 0;
+	@include respond-screen($bp-md){
+		padding: 0 0 0 0.75em;
+	}
+}
+.box-col-multi {
+	padding: 0;
+	@include respond-screen($bp-sm) {
+		padding: 0 1em 0 0;
+	}
+}
+
+.box-first-multi {
+	padding: 0;
+	@include respond-screen($bp-md){
+		padding: 0 1em 0 0;
+	}
+}
+.box-mid-multi {
+	padding: 0;
+	@include respond-screen($bp-md){
+		padding: 0 0.5em 0 0.5em;
+	}
+}
+.box-last-multi {
+	padding: 0;
+	@include respond-screen($bp-md){
+		padding: 0 0 0 1em;
+	}
+}
+.box-first-multi-m {
+	padding: 0 0.6em 0 0;
+	@include respond-screen($bp-md){
+		padding: 0 1em 0 0;
+	}
+}
+.box-mid-multi-m {
+	padding: 0 0.3em 0 0.3em;
+	@include respond-screen($bp-md){
+		padding: 0 0.5em 0 0.5em;
+	}
+}
+
+.box-main-tb {
+	padding: 0 0 1em 0;
+	@include respond-screen($bp-md){
+		padding: 1.5em 0;
+	}
+}
+
+.box-sm-main {
+	padding: 0.3em;
+	@include respond-screen($bp-md){
+		padding: 0.5em;
+	}
+}
+.box-form-first { padding: .25em 0 .25em 0;
+	@include respond-screen($bp-sm) {
+	padding: .3em 1em .3em  0;
+	}
+}
+
+.box-form-last { padding: .25em 0 .25em 0;
+	@include respond-screen($bp-sm) {
+	padding: .3em 0 .3em  1em;
+	}
+}
+
+.box-form-first-sm { padding: 0;
+	@include respond-screen($bp-lg) {
+	padding: .3em .5em .3em  0;
+	}
+}
+
+.box-form-last-sm { padding: 0;
+	@include respond-screen($bp-lg) {
+	padding: .3em 0 .3em  .5em;
+	}
+}
+
+.box-form-first-wrapper { padding: .25em 0 .25em 0;
+	@include respond-screen($bp-md) {
+	padding: .3em 1em .3em  0;
+	}
+	@include respond-screen($bp-lg) {
+	padding: 0;
+	}
+}
+
+.box-form-last-wrapper { padding: .25em 0 .25em 0;
+	@include respond-screen($bp-md) {
+	padding: .3em 0 .3em  1em;
+	}
+	@include respond-screen($bp-lg) {
+	padding: 0;
+	}
+}
+
+.box-footer {
+	padding: 0 1em;
+	margin-bottom: 10px;
+	@include respond-screen($bp-md) {
+		min-height: 120px;
+	}
+}
+
+
+.box-img-first { padding: 0; }
+.box-img-last { padding-left: 4px; }
+.box-img-tl { padding: 0 2px 2px 0; }
+.box-img-tr { padding: 0 0 2px 2px; }
+.box-img-br { padding: 2px 0 0 2px; }
+.box-img-bl { padding: 2px 2px 0 0; }

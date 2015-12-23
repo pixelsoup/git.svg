@@ -1,0 +1,78 @@
+/*	.container class used to center horizontally in viewport	*/
+/*	and constrain content within responsive breakpoints			*/
+
+@include respond-screen($bp-sm) { /* 35.5em 568px */
+	.container { max-width: 767px; }
+}
+
+@include respond-screen($bp-md) { /* 48em 768px */
+	.container { max-width: 1023px; }
+}
+
+@include respond-screen($bp-lg) { /* 64em 1024px */
+	.container { max-width: 1169px; }
+}
+
+@include respond-screen($bp-xl) { /* 80em 1280px */
+	.container { width: 1170px; }
+}
+
+@if $media-queries == false {
+	.container { width: $fixedWidthThreshold; }
+}
+
+.container,
+.container-banner-sm {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+
+.container:before,
+.container:after,
+.container-banner-sm:before,
+.container-banner-sm:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.container:after,
+.container-banner-sm:after {
+	clear: both
+}
+
+.container-banner-sm {
+	max-width: 1280px;
+}
+
+.container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.container-fluid:before, .container-fluid:after {
+	content: " ";
+	display: table;
+}
+
+.container-fluid:after {
+	clear: both;
+}
+.container > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-header,
+.container-fluid > .navbar-collapse {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+@include respond(768px) {
+.container > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-header,
+.container-fluid > .navbar-collapse {
+  margin-right: 0;
+  margin-left: 0; }
+}

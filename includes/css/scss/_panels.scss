@@ -1,0 +1,81 @@
+/* ===================================
+   Panels - Custom
+   =================================== */
+/*
+Accordion
+*/
+.panel { border-radius: 0; }
+.panel-default { border: transparent; }
+.panel-default > .panel-heading { color: $black94; background-color: $secondaryCol; border-bottom: 1px solid $black25; }
+.panel-heading { border-radius: 0; }
+.panel-group .panel { border-radius: 0; }
+.panel-group .panel + .panel { margin-top: 0; }
+.panel-group .panel-heading + .panel-collapse > .panel-body { border-top: transparent; }
+.panel-collapse { border-left: 1px $black20 solid; border-right: 1px $black20 solid; border-bottom: 1px $black20 solid; }
+
+/* Mobile Drop Down Menu */
+.panel-heading {
+	padding: 0;
+	a:hover { color: $black95; }
+}
+.panel-title{
+	a {
+		display: block;
+		padding: 15px 10px;
+		position: relative;
+		&:hover {
+			text-decoration: none;
+		}
+		span{
+			width: 52px;
+			height: 18px;
+			display: block;
+			position: absolute;
+			right: 20px;
+			top: 33%;
+			background: url('../../images/icons_all.png') no-repeat -3px -730px;
+			@include Transition(background, 150);
+		}
+		&.collapsed span{
+			background: url('../../images/icons_all.png') no-repeat -3px -705px;
+		}
+		&.single span{
+			background: none;
+		}
+
+	}
+}
+.panel-body {
+	color: $black100;
+	padding: 0;
+
+	a {
+		font-size: 13px;
+		display: block;
+		color: #fff;
+		margin: 0;
+		padding: 10px 15px 10px 30px;
+		text-decoration: none;
+		background-color: $black80;
+		border-top: 1px solid #474747;
+		border-bottom: 1px solid #0d0d0d;
+	}
+
+	.box-form-first-wrapper {
+		@include respond-screen($bp-md){
+			padding: .3em 1em .3em 0;
+		}
+	}
+
+	.box-form-last-wrapper {
+		@include respond-screen($bp-md){
+			padding: .3em 0 .3em 1em;
+		}
+	}
+}
+
+.form-panel-bar{
+	.panel{
+		margin-bottom: 0;
+	}
+}

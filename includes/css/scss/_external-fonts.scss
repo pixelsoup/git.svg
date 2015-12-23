@@ -1,0 +1,39 @@
+/* ==========================================================================
+ @import rules first
+   ========================================================================== */
+
+@font-face {
+	font-family: 'Source Sans';
+	font-style: normal;
+	src:	url("../../includes/css/webfonts/SourceSansPro-Regular.eot");
+	src:	url("../../includes/css/webfonts/SourceSansPro-Regular.eot#iefix") format("embedded-opentype"),
+			url("../../includes/css/webfonts/SourceSansPro-Regular.woff") format("woff"),
+			url("../../includes/css/webfonts/SourceSansPro-Regular.ttf") format("opentype"),
+			url("../../includes/css/webfonts/SourceSansPro-Regular.svg") format("svg");
+}
+
+@font-face {
+	font-family: 'Source Sans Italic';
+	font-style: normal;
+	src:	url("../../includes/css/webfonts/SourceSansPro-Italic.eot");
+	src:	url("../../includes/css/webfonts/SourceSansPro-Italic.eot#iefix") format("embedded-opentype"),
+			url("../../includes/css/webfonts/SourceSansPro-Italic.woff") format("woff"),
+			url("../../includes/css/webfonts/SourceSansPro-Italic.ttf") format("opentype"),
+			url("../../includes/css/webfonts/SourceSansPro-Italic.svg") format("svg");
+}
+
+/*!
+ *  Material Design Iconic Font by Sergey Kupletsky (@zavoloklom) - http://zavoloklom.github.io/material-design-iconic-font/
+ *  License - http://zavoloklom.github.io/material-design-iconic-font/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face {
+  font-family: 'Material-Design-Iconic-Font';
+  src: 	url('https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Material-Design-Iconic-Font2.eot');
+  src:	url('https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Material-Design-Iconic-Font2.eot#iefix') format('embedded-opentype'),
+  		url('https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Material-Design-Iconic-Font2.woff2') format('woff2'),
+		url('https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Material-Design-Iconic-Font2.woff') format('woff'),
+		url('https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Material-Design-Iconic-Font2.ttf') format('truetype'),
+		url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Material-Design-Iconic-Font2.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
