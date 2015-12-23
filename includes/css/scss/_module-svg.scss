@@ -2,12 +2,20 @@
 	@include primaryFontStackItalic;
     color: #000;
     font-size: 30px;
-    padding-left: 20px;
     margin: 0px;
     margin-top: 20px;
     margin-bottom: 10px;
     position: relative;
 }
+
+.box-icon-sm {
+	   padding-left: 20px;
+}
+
+.box-icon-med {
+	   padding-left: 40px;
+}
+
 
 .left-triangle {
 	width: 0;
@@ -37,10 +45,19 @@
 	left: 0;
 }
 
-.icon-page-heading {
+.icon-polygon {
 	width: 17px;
 	height: 24px;
 	top: 9px;
 	fill: chocolate;
 	color: #bada55;
+}
+
+.icon-facebook {
+	width: 35px;
+	height: 35px;
+	top: 3px;
+	fill: #fff;
+	background: teal;
+	border-radius: 3px;
 }
