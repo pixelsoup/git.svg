@@ -8,13 +8,13 @@
 				<h1 class="page-title box-icon-sm"><span class="left-triangle"></span><span class="right-triangle"></span>CSS icon: 2 x CSS Triangles</h1>
 				<p>The 2 css triangles have a barely perceptible gap in Firefox and Chrome. Safari looks OK.</p>
 
-				<h1 class="page-title box-icon-sm"><svg aria-hidden="true" class="icon icon-polygon" viewBox="0 0 18 25"><use xlink:href="images/svg-defs.svg#icon-page-heading1"></use></svg>Polygon icon: 1 x SVG Polygon Shape</h1>
+				<h1 class="page-title box-icon-sm"><svg aria-hidden="true" class="icon icon-polygon" viewBox="0 0 18 25"><use xlink:href="images/svg-defs.svg#icon-page-heading1"/></svg>Polygon icon: 1 x SVG Polygon Shape</h1>
 				<p>The SVG icon uses xlink: to an external svg file with defs for clean markup. This technique doesn't allow Chrome to target individual paths in Chrome with CSS <a href="https://css-tricks.com/forums/topic/svg-styling-problems-with-use-and-xlink/" target="_blank">(CSS Tricks forum question)</a>. But CSS works OK in Firefox and Safari. The xlink: technique doesn't work at all in IE anything. A JS polyfill is needed (<a href="https://github.com/jonathantneal/svg4everybody" target="_blank">SVG for Everybody</a>).  See Also <a href="http://csskarma.com/blog/svg-fragment-identifiers/" target="_blank">CSS Karma</a></p>
 
-				<h1 class="page-title box-icon-sm"><svg aria-hidden="true" class="icon icon-polygon" viewBox="0 0 18 25"><use xlink:href="images/svg-defs.svg#icon-page-heading2"></use></svg>Polygon icon: 2 x SVG Polygon Shapes</h1>
+				<h1 class="page-title box-icon-sm"><svg aria-hidden="true" class="icon icon-polygon" viewBox="0 0 18 25"><use xlink:href="images/svg-defs.svg#icon-page-heading2"/></svg>Polygon icon: 2 x SVG Polygon Shapes</h1>
 				<p>Both <code>&lt;svg&gt;</code> polygons are successfully styled with CSS in Chrome, Safari and Firefox. The top polygon is styled with <code>fill: chocolate;</code> The top polygon is styled in the same rule set with <code>color: #bada55;</code> The css property <code>color:</code> works because fill="currentColor" was added to the bottom polygon in the svg code. currentColor is a valid css value recognised by ie9+. It inherits the color of it's parent. In this case the fill inherits the colour of the parent element <code>&lt;svg&gt;</code>.
 
-				<h1 class="page-title box-icon-med"><svg aria-hidden="true" class="icon icon-facebook" viewBox="-6 -6 47 47"><use xlink:href="images/svg-defs.svg#icon-facebook"></use></svg>Facebook icon - 1 x colour</h1>
+				<h1 class="page-title box-icon-med"><svg aria-hidden="true" class="icon icon-facebook" viewBox="-6 -6 47 47"><use xlink:href="images/svg-defs.svg#icon-facebook"/></svg>Facebook icon - 1 x colour</h1>
 
 
 				<h3>SVG Articles</h3>
